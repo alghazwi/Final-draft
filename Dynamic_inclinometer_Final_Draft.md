@@ -43,15 +43,15 @@ Another major challenge of the project will be designing a system that precisely
 
 The team has developed a conceptual design that will be used for the system.
 
-The following diagram shows the project architecture and design overview.
+The following diagram shows the project architecture and design overview.It shows the overview of the steps that need to be accomplished in order to fulfill the requirements of the project.
 
 ![Project Architecture](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/project_overview.png)
 
-The following diagram shows analysis of all major subsystems.
+The following diagram shows analysis of all major subsystems. It also displays how to wire and program the sensor.
 
 ![Major Subsystems](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/analysis_subsystems.png)
 
-The following diagram show the system level performance metrics and requirements matrix
+The following diagram show the system level performance metrics and requirements matrix; The current design requirements and performance matrix.
 
 ![Major Subsystems](https://github.com/alghazwi/Final-draft/blob/master/images/System%20level%20performance%20metrics%20and%20requirements%20matrix.png?raw=true)
 
