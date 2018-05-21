@@ -33,6 +33,12 @@ Accurate report of the pitch and roll angle measurement of the forklift. Range o
 
 The budget of the system design to be 0 dollars. This will be made possible by using the client's hardware and software.
 
+## Primary and Secondary client requirements
+
+The table below classifies the client’s requirements according to the level of importance, primary requirements, secondary requirements and the performance matrix. Reports regarding the inclination of the forklift is the most important since that’s what the whole project is based on. The budget is the least important since the client provides the hardware and software. The team spends no money on the entire project.
+
+![Primary and Secondary requiremetns table](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/project_overview.png)
+
 ## Design Challenges
 
 One of the challenges is that, the sensor cannot be determined whether it has the capability to measure the pitch and roll of the forklift to a satisfactory degree until the capstone group has had a chance to work with the preferred sensor.
@@ -53,7 +59,7 @@ The following diagram shows analysis of all major subsystems. It also displays h
 
 The following diagram show the system level performance metrics and requirements matrix; The current design requirements and performance matrix.
 
-![Major Subsystems](https://github.com/alghazwi/Final-draft/blob/master/images/System%20level%20performance%20metrics%20and%20requirements%20matrix.png?raw=true)
+![Performance requirements](https://github.com/alghazwi/Final-draft/blob/master/images/System%20level%20performance%20metrics%20and%20requirements%20matrix.png?raw=true)
 
 The following diagram shows the accelerometer model.
 
@@ -77,4 +83,4 @@ The following photo shows the jlink usb.
 
 The following shows the gant chart of how the tasks are planned to be completed.
 
-![Impact Sensor](https://github.com/alghazwi/Final-draft/blob/d9f077a85337609a972ed507df7d9adbf71ab605/images/Gant%20chart.png)
+![Gant chart](https://github.com/alghazwi/Final-draft/blob/d9f077a85337609a972ed507df7d9adbf71ab605/images/Gant%20chart.png)
