@@ -62,7 +62,7 @@ The following diagram show the system level performance metrics and requirements
 ![Performance requirements](https://github.com/alghazwi/Final-draft/blob/master/images/System%20level%20performance%20metrics%20and%20requirements%20matrix.png?raw=true)
 
 The following diagram shows the accelerometer model. An accelerometer is an electromechanical device that is used to measure forces of acceleration. These forces may be static, like continuous gravitational forces or dynamic like vibrations and movements.Utilizing the model in the figure below, the resultant force, R, can be calculated using the following equation:
-R=SQRT(〖Rx〗^2+〖Ry〗^2+〖Rz〗^2)
+**R=SQRT((Rx)^2+(Ry)^2+(Rz)^2)**
 
 
 ![Accelerometer Model](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/accelerometer_model.png)
@@ -74,13 +74,13 @@ The following diagram shows the gyroscope model.A gyroscope is a device comprisi
 The following photo shows the impact sensor. An issue may arise with learning how to use the sensor and it’s corresponding software and afterwards gathering and analyzing the data it produces. However, PSU has a lab that contains a three axes simulator and a centrifuge table. The team will first test the sensor to see if it is working properly and if the programmed code provides the desired output. Once the testing of the sensor is done and the team is satisfied that the sensor works properly and as planned, HYG will be contacted and we will request vehicle motion data as well as the corresponding data from the sensor. This data will then be analyzed and any required modifications to the code due to the introduction of the vehicles motion will be implemented. 
 From the model below; Axz is the pitch angle and Ayz is the roll angle. These can be determined using the following equations:
 
-tan⁡(Axz)=  Rx/Rz  =>atan⁡2(Rx,Rz)
+**tan⁡(Axz)=  Rx/Rz  =>atan⁡2(Rx,Rz)**
 
-tan⁡(Ayz)=  Ry/Rz=>atan2(Ry,Rz)
+**tan⁡(Ayz)=  Ry/Rz=>atan2(Ry,Rz)**
 
 Combining the above two equations provides us with the resulting filter equation:
 
-Angle=k*(Angle+GyroAngle*dt)+(1-k)*AccAngle
+**Angle=k x (Angle+GyroAngle x dt)+(1-k) x AccAngle**
 
 The true inclination angle will be determined by using a combination of the vehicles motion and the equations shown above. These calculations will be done using knowledge obtained from the dynamics class.
 
