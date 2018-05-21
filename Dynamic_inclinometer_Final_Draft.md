@@ -37,7 +37,7 @@ The budget of the system design to be 0 dollars. This will be made possible by u
 
 The table below classifies the client’s requirements according to the level of importance, primary requirements, secondary requirements and the performance matrix. Reports regarding the inclination of the forklift is the most important since that’s what the whole project is based on. The budget is the least important since the client provides the hardware and software. The team spends no money on the entire project.
 
-![Primary and Secondary requiremetns table](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/project_overview.png)
+![Primary and Secondary requiremetns table](https://github.com/alghazwi/Final-draft/blob/master/images/requirements.PNG)
 
 ## Design Challenges
 
