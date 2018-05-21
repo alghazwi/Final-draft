@@ -49,11 +49,11 @@ Another major challenge of the project will be designing a system that precisely
 
 The team has developed a conceptual design that will be used for the system.
 
-The following diagram shows the project architecture and design overview.It shows the overview of the steps that need to be accomplished in order to fulfill the requirements of the project.
+The diagram below shows the project architecture and design overview.It shows the overview of the steps that need to be accomplished in order to fulfill the requirements of the project. The figure below also summarizes the system design that will be implemented. It begins by using the client provided hardware and software in order to maintain the same communication network and topology as the one that HYG currently uses in their forklifts. The sensor that is used comprises of both an accelerometer and gyroscope which is capable of producing data to the six axes.
 
 ![Project Architecture](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/project_overview.png)
 
-The following diagram shows analysis of all major subsystems. It also displays how to wire and program the sensor.
+The following diagram shows analysis of all major subsystems. It also displays how to wire and program the sensor. The figure also shows the connections and interactions between the necessary components required to program and analyze data obtained from the sensor. The ifak CAN USB is used to view the CAN data that the sensor provides while the J-Link JTAG USB is used to program and debug the sensor. The ifak CAN USB is the preferred cable due to its compatibility with MATLAB. 
 
 ![Major Subsystems](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/analysis_subsystems.png)
 
@@ -61,15 +61,24 @@ The following diagram show the system level performance metrics and requirements
 
 ![Performance requirements](https://github.com/alghazwi/Final-draft/blob/master/images/System%20level%20performance%20metrics%20and%20requirements%20matrix.png?raw=true)
 
-The following diagram shows the accelerometer model.
+The following diagram shows the accelerometer model. An accelerometer is an electromechanical device that is used to measure forces of acceleration. These forces may be static, like continuous gravitational forces or dynamic like vibrations and movements.Utilizing the model in the figure below, the resultant force, R, can be calculated using the following equation:
+R=SQRT(〖Rx〗^2+〖Ry〗^2+〖Rz〗^2)
+
 
 ![Accelerometer Model](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/accelerometer_model.png)
 
-The following diagram shows the gyroscope model.
+The following diagram shows the gyroscope model.A gyroscope is a device comprising of a wheel or disc mounted so that it can rapidly spin about an axis which is itself free to alter in direction. The orientation of the axis is not affected by tilting of the mounting.An issue may arise with the three axes simulator to test the gyroscope due to some cable interference. This will however not hamper our development since the solution would be to alter and modify the code. If that doesn’t work, a one axis simulator will be designed and built. 
 
 ![Gyroscope Model](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/gyroscope_model.png)
 
-The following photo shows the impact sensor.
+The following photo shows the impact sensor. An issue may arise with learning how to use the sensor and it’s corresponding software and afterwards gathering and analyzing the data it produces. However, PSU has a lab that contains a three axes simulator and a centrifuge table. The team will first test the sensor to see if it is working properly and if the programmed code provides the desired output. Once the testing of the sensor is done and the team is satisfied that the sensor works properly and as planned, HYG will be contacted and we will request vehicle motion data as well as the corresponding data from the sensor. This data will then be analyzed and any required modifications to the code due to the introduction of the vehicles motion will be implemented. 
+From the model below; Axz is the pitch angle and Ayz is the roll angle. These can be determined using the following equations:
+tan⁡(Axz)=  Rx/Rz  =>atan⁡2(Rx,Rz)
+tan⁡(Ayz)=  Ry/Rz=>atan2(Ry,Rz)
+Combining the above two equations provides us with the resulting filter equation:
+Angle=k*(Angle+GyroAngle*dt)+(1-k)*AccAngle
+
+The true inclination angle will be determined by using a combination of the vehicles motion and the equations shown above. These calculations will be done using knowledge obtained from the dynamics class.
 
 ![Impact Sensor](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/impact_sensor.png)
 
@@ -81,6 +90,6 @@ The following photo shows the jlink usb.
 
 ![Impact Sensor](https://github.com/alghazwi/Dynamic-inclinometer/blob/master/Dynamic/images/jlink_usb.png)
 
-The following shows the gant chart of how the tasks are planned to be completed.
+The following shows the gant chart of how the tasks are planned to be completed.The Gantt chart describes the sequencing of tasks and time requirements. The actual task and the deliverable date may change. This variation will depend on the actual progress of the project.
 
 ![Gant chart](https://github.com/alghazwi/Final-draft/blob/d9f077a85337609a972ed507df7d9adbf71ab605/images/Gant%20chart.png)
