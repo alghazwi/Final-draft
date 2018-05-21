@@ -73,6 +73,7 @@ The following diagram shows the gyroscope model.A gyroscope is a device comprisi
 
 The following photo shows the impact sensor. An issue may arise with learning how to use the sensor and it’s corresponding software and afterwards gathering and analyzing the data it produces. However, PSU has a lab that contains a three axes simulator and a centrifuge table. The team will first test the sensor to see if it is working properly and if the programmed code provides the desired output. Once the testing of the sensor is done and the team is satisfied that the sensor works properly and as planned, HYG will be contacted and we will request vehicle motion data as well as the corresponding data from the sensor. This data will then be analyzed and any required modifications to the code due to the introduction of the vehicles motion will be implemented. 
 From the model below; Axz is the pitch angle and Ayz is the roll angle. These can be determined using the following equations:
+
 tan⁡(Axz)=  Rx/Rz  =>atan⁡2(Rx,Rz)
 
 tan⁡(Ayz)=  Ry/Rz=>atan2(Ry,Rz)
